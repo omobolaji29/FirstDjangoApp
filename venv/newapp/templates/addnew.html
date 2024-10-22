@@ -1,0 +1,17 @@
+
+<html lang="en">
+<head>
+    
+    <title>add new page </title>
+</head>
+<body>
+  <h1>this is a add new page </h1>  
+  <form method="POST">
+	{% csrf_token %}
+	<!-- as_p is to wrap all input in a paragraph tag -->
+     {{formentry.as_p}}
+
+  </form>
+  <button >Submit</button>
+</body>
+</html>
